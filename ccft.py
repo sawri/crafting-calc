@@ -27,16 +27,6 @@ EMOJI = {'NO': '<:no:534529985210351677>', 'OLUL': '<:OMEGALUL:48015733294524006
 		'KIT': '<:kit:533354603115446275>', 'CURE': '<:cure:534558103987945472>'}
 
 
-@client.event
-async def on_message(message):
-	if message.content.startswith('<:POGGERS:500039806143954964>'):
-		await client.send_message(message.channel, '<:POGGERZ:533433324153208842>')
-	if message.content == ('!fbi'):
-		await client.send_message(message.channel, 'https://tenor.com/view/fbi-raid-swat-gif-11500735')
-	await client.process_commands(message)
-
-
-
 @client.command()
 async def help():
 
